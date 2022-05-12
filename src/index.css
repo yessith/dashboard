@@ -1,13 +1,136 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/*------------------------------------*\
+    VARIABLES
+\*------------------------------------*/
+
+:root {
+  --primary-color: #049ef4;
+  --secundary-color: #04549f;
+  --tertiary-color: #302634;
+  --text-color-01: #888888;
+  --text-color-02: #1f1f20;
+  --active-title: #10ad87;
+  --light: #ffffff;
+  --gray: #eee;
+  --text-a: #4a4a4a;
+  --text-b: #292929;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/*------------------------------------*\
+    GOOGLE FONTS
+\*------------------------------------*/
+
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai+Looped:wght@300;400;700&display=swap");
+/*------------------------------------*\
+    RESET
+\*------------------------------------*/
+
+html, body, div, span, button, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, a, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, main, menu, nav, section, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+article, aside, details, figcaption, figure, footer, header, main, menu, nav, section, summary {
+  display: block;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  -webkit-overflow-scrolling: touch;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+body {
+  font-family: "IBM Plex Sans Thai Looped", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 300;
+  color: #292929;
+  background-color: var(--gray);
+  line-height: 1.5;
+  text-rendering: optimizeLegibility;
+  position: relative;
+}
+
+a, button, i {
+  cursor: pointer;
+  outline: none;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  vertical-align: middle;
+  -ms-interpolation-mode: bicubic;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  line-height: 1.5;
+  text-rendering: optimizelegibility;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+span {
+  line-height: 1.5;
+  font-weight: 300;
+}
+
+/*------------------------------------*\
+    $LINKS
+\*------------------------------------*/
+
+a {
+  text-decoration: none;
+  color: var(--color-primary)
+}
+
+a:hover {
+  color: var(--color-primary)
+}
+
+a:focus {
+  color: var(--color-primary)
+}
+
+a:hover, a:active {
+  outline: 0;
+}
+
+@media only screen and (min-width: 1024px) {
+  #root {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 }

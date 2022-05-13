@@ -1,0 +1,17 @@
+.home {
+  padding-left: 7rem;
+  padding-right: 1rem;
+  display: grid;
+  align-items: center;
+  align-self: baseline;
+}
+
+
+@media only screen and (min-width: 1024px) {
+  .home {
+    justify-content: space-between;
+    grid-template-columns: 50% 40%;
+  }
+
+
+}

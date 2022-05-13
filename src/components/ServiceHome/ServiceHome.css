@@ -1,0 +1,33 @@
+.home__info {
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+  gap: 2rem;
+  background-color: var(--light);
+}
+
+
+.home__info__box {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.home__info__box h3 {
+  color: var(--primary-color);
+}
+
+.home__info button {
+  height: 30px;
+  width: 150px;
+  border: 1px solid var(--active-title);
+  border-radius: .4rem;
+  color: var(--active-title);
+}
+
+@media only screen and (min-width: 1024px) {
+  .home__info__box p {
+    width: 70%;
+  }
+}

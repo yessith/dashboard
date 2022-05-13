@@ -4,6 +4,7 @@ import { Articles } from 'pages/Articles'
 import { Company } from 'pages/Company'
 import { Home } from 'pages/Home'
 import { NavBar } from 'components/NavBar'
+import { Footer } from 'components/Footer'
 
 export function AppRoutes() {
 	return (
@@ -14,6 +15,7 @@ export function AppRoutes() {
 				<Route path='/company' element={<Company />} />
 				<Route path='/articles' element={<Articles />} />
 			</Routes>
+			<Footer />
 		</BrowserRouter>
 	)
 }

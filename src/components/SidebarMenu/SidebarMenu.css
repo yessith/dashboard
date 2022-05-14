@@ -118,6 +118,11 @@
   background-color: transparent;
 }
 
+.sidebar__subMenu__list--items {
+  color: var(--light);
+
+}
+
 .accordion-button span:hover, .sidebar__subMenu__list--items:focus {
   color: var(--active-title);
 }

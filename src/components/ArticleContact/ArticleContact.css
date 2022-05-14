@@ -1,0 +1,31 @@
+.articleContact {
+  height: 700px;
+  padding: 1.5rem;
+  background-color: var(--light);
+}
+
+.articleContact__info, .articleContact__details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.articleContact__info__box, .articleContact__details__box {
+  height: 160px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.articleContact__info__box div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .articleContact__info, .articleContact__details {
+    align-items: center;
+    text-align: center;
+  }
+}

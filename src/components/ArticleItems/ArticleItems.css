@@ -1,0 +1,19 @@
+.articles__box {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.articles__box--img {
+  border: 2px solid var(--text-color-01);
+}
+
+.articles__box--img, .articles__box--img img {
+  border-radius: 50%;
+}
+
+.articles__box--text h3 {
+  margin-bottom: 1rem;
+}

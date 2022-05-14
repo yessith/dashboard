@@ -111,15 +111,15 @@ span {
 
 a {
   text-decoration: none;
-  color: var(--color-primary)
+  color: var(--primary-color)
 }
 
 a:hover {
-  color: var(--color-primary)
+  color: var(--primary-color)
 }
 
 a:focus {
-  color: var(--color-primary)
+  color: var(--primary-color)
 }
 
 a:hover, a:active {

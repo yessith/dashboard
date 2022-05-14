@@ -20,6 +20,10 @@
   align-items: center;
 }
 
+.sidebar__items a {
+  color: var(--light);
+}
+
 .sidebar__menu {
   width: 250px;
   height: inherit;
@@ -112,6 +116,10 @@
   font-size: 1.7rem;
   color: var(--light);
   background-color: transparent;
+}
+
+.accordion-button span:hover, .sidebar__subMenu__list--items:focus {
+  color: var(--active-title);
 }
 
 
